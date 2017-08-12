@@ -1,18 +1,18 @@
 import Foundation
 import RxSwift
 
-protocol FindChannelUseCaseProtocol {
+public protocol FindChannelUseCaseProtocol {
     func execute(channel: String) -> Observable<Channel>
 }
 
-class FindChannelUseCase: FindChannelUseCaseProtocol {
+public class FindChannelUseCase: FindChannelUseCaseProtocol {
     private let repository: ChannelRepositoryProtocol
     
-    init(repository: ChannelRepositoryProtocol = ChannelRepository()) {
+    public init(repository: ChannelRepositoryProtocol = ChannelRepository()) {
         self.repository = repository
     }
     
-    func execute(channel: String) -> Observable<Channel> {
+    public func execute(channel: String) -> Observable<Channel> {
         return repository.find(channel: channel)
     }
 }

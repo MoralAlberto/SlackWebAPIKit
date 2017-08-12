@@ -8,22 +8,22 @@ enum UserDatasourceError: Error {
     case listIsEmpty
 }
 
-protocol UserDatasourceProtocol: class {
+public protocol UserDatasourceProtocol: class {
     func list() -> Observable<[UserDataModel]>
     func find(user: String) -> Observable<UserDataModel>
 }
 
-class UserDatasource: UserDatasourceProtocol {
+public class UserDatasource: UserDatasourceProtocol {
     
     fileprivate let apiClient: APIClientProtocol
     fileprivate let endpoint: Endpoint
     
-    init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = UsersListEndpoint()) {
+    public init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = UsersListEndpoint()) {
         self.apiClient = apiClient
         self.endpoint = endpoint
     }
     
-    func find(user: String) -> Observable<UserDataModel> {
+    public func find(user: String) -> Observable<UserDataModel> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<UserDataModel> in
             guard let JSONUsers = json["members"] as? [[String: Any]],
                 let users = Mapper<UserDataModel>().mapArray(JSONObject: JSONUsers) else {
@@ -36,7 +36,7 @@ class UserDatasource: UserDatasourceProtocol {
         }
     }
     
-    func list() -> Observable<[UserDataModel]> {
+    public func list() -> Observable<[UserDataModel]> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<[UserDataModel]> in
             guard let JSONUsers = json["members"] as? [[String: Any]],
                 let users = Mapper<UserDataModel>().mapArray(JSONObject: JSONUsers) else {

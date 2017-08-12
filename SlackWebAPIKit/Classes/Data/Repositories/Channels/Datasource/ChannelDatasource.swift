@@ -8,22 +8,22 @@ enum ChannelDatasourceError: Error {
     case listIsEmpty
 }
 
-protocol ChannelDatasourceProtocol: class {
+public protocol ChannelDatasourceProtocol: class {
     func list() -> Observable<[ChannelDataModel]>
     func find(channel: String) -> Observable<ChannelDataModel>
 }
 
-class ChannelDatasource: ChannelDatasourceProtocol {
+public class ChannelDatasource: ChannelDatasourceProtocol {
     
     fileprivate let apiClient: APIClientProtocol
     fileprivate let endpoint: Endpoint
     
-    init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = ChannelsListEndpoint()) {
+    public init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = ChannelsListEndpoint()) {
         self.apiClient = apiClient
         self.endpoint = endpoint
     }
     
-    func find(channel: String) -> Observable<ChannelDataModel> {
+    public func find(channel: String) -> Observable<ChannelDataModel> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<ChannelDataModel> in
             guard let JSONChannels = json["channels"] as? [[String: Any]],
                 let channels = Mapper<ChannelDataModel>().mapArray(JSONObject: JSONChannels) else {
@@ -36,7 +36,7 @@ class ChannelDatasource: ChannelDatasourceProtocol {
         }
     }
     
-    func list() -> Observable<[ChannelDataModel]> {
+    public func list() -> Observable<[ChannelDataModel]> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<[ChannelDataModel]> in
             guard let JSONChannels = json["channels"] as? [[String: Any]],
                 let channels = Mapper<ChannelDataModel>().mapArray(JSONObject: JSONChannels) else {

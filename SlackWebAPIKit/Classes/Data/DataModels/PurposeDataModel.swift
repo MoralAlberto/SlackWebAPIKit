@@ -1,4 +1,4 @@
 import Foundation
 import ObjectMapper
 
-class PurposeDataModel: TopicDataModel { }
+public class PurposeDataModel: TopicDataModel { }

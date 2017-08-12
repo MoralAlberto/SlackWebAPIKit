@@ -1,21 +1,21 @@
 import Foundation
 import RxSwift
 
-protocol FindChannelAndPostMessageUseCaseProtocol: class {
+public protocol FindChannelAndPostMessageUseCaseProtocol: class {
     func execute(text: String, channel: String) -> Observable<Bool>
 }
 
-class FindChannelAndPostMessageUseCase: FindChannelAndPostMessageUseCaseProtocol {
+public class FindChannelAndPostMessageUseCase: FindChannelAndPostMessageUseCaseProtocol {
     let findChannelUseCase: FindChannelUseCaseProtocol
     let postMessageUseCase: PostMessageUseCaseProtocol
     
-    init(findChannelUseCase: FindChannelUseCaseProtocol = FindChannelUseCase(),
+    public init(findChannelUseCase: FindChannelUseCaseProtocol = FindChannelUseCase(),
          postMessageUseCase: PostMessageUseCaseProtocol = PostMessageUseCase()) {
         self.findChannelUseCase = findChannelUseCase
         self.postMessageUseCase = postMessageUseCase
     }
     
-    func execute(text: String, channel: String) -> Observable<Bool> {
+    public func execute(text: String, channel: String) -> Observable<Bool> {
         return findChannelUseCase.execute(channel: channel).flatMap { [weak self] foundChannel -> Observable<Bool> in
             guard let strongSelf = self,
                 let channelId = foundChannel.id

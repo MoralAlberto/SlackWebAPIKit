@@ -1,6 +1,6 @@
 import Foundation
 
-class Group {
+public class Group {
     var created: Int?
     var creator: String?
     var id: String?

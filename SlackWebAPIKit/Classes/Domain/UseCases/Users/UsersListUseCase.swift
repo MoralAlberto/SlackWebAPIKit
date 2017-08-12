@@ -1,18 +1,18 @@
 import Foundation
 import RxSwift
 
-protocol UsersListUseCaseProtocol: class {
+public protocol UsersListUseCaseProtocol: class {
     func execute() -> Observable<[User]>
 }
 
-class UsersListUseCase: UsersListUseCaseProtocol {
+public class UsersListUseCase: UsersListUseCaseProtocol {
     private let repository: UserRepositoryProtocol
     
-    init(repository: UserRepositoryProtocol = UserRepository()) {
+    public init(repository: UserRepositoryProtocol = UserRepository()) {
         self.repository = repository
     }
     
-    func execute() -> Observable<[User]> {
+    public func execute() -> Observable<[User]> {
         return repository.list()
     }
 }

@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class UserDataModel: Mappable {
+public class UserDataModel: Mappable {
     var id: String?
     var teamId: String?
     var name: String?
@@ -10,10 +10,10 @@ class UserDataModel: Mappable {
     var realName: String?
     var profileImage: String?
     
-    required init?(map: Map) { }
+    required public init?(map: Map) { }
     
     // Mappable
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         id           <- map["id"]
         teamId       <- map["team_id"]
         name         <- map["name"]

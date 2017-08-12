@@ -1,4 +1,4 @@
 public class ChannelsListEndpoint: Endpoint {
-    var endpointType: EndpointType = .channelsList
-    var parameters: [String: String]?
+    public var endpointType: EndpointType = .channelsList
+    public var parameters: [String: String]?
 }

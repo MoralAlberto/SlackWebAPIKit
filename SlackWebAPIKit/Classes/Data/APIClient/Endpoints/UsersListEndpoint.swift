@@ -1,4 +1,4 @@
 public class UsersListEndpoint: Endpoint {
-    var endpointType: EndpointType = .usersList
-    var parameters: [String: String]?
+    public var endpointType: EndpointType = .usersList
+    public var parameters: [String: String]?
 }

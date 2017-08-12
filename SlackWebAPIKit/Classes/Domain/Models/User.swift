@@ -1,6 +1,6 @@
 import Foundation
 
-class User {
+public class User {
     var id: String?
     var teamId: String?
     var name: String?

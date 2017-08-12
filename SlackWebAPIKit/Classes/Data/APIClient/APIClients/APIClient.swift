@@ -3,18 +3,18 @@ import Alamofire
 import ObjectMapper
 import RxSwift
 
-protocol APIClientProtocol: class {
+public protocol APIClientProtocol: class {
     func execute(withURL url: URL?) -> Observable<[String: Any]>
 }
 
-class APIClient: APIClientProtocol {
+public class APIClient: APIClientProtocol {
     fileprivate let sessionManager = SessionManager()
     
-    init() {
+    public init() {
         self.sessionManager.adapter = AccessTokenAdapter(accessToken: API.token)
     }
     
-    func execute(withURL url: URL?) -> Observable<[String: Any]> {
+    public func execute(withURL url: URL?) -> Observable<[String: Any]> {
         return Observable.create { [weak self] observable in
             guard let strongSelf = self else {
                 return Disposables.create()

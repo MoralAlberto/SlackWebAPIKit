@@ -8,22 +8,22 @@ enum GroupDatasourceError: Error {
     case listIsEmpty
 }
 
-protocol GroupDatasourceProtocol: class {
+public protocol GroupDatasourceProtocol: class {
     func list() -> Observable<[GroupDataModel]>
     func find(group: String) -> Observable<GroupDataModel>
 }
 
-class GroupDatasource: GroupDatasourceProtocol {
+public class GroupDatasource: GroupDatasourceProtocol {
     
     fileprivate let apiClient: APIClientProtocol
     fileprivate let endpoint: Endpoint
     
-    init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = GroupsListEndpoint()) {
+    public init(apiClient: APIClientProtocol = APIClient(), endpoint: Endpoint = GroupsListEndpoint()) {
         self.apiClient = apiClient
         self.endpoint = endpoint
     }
     
-    func find(group: String) -> Observable<GroupDataModel> {
+    public func find(group: String) -> Observable<GroupDataModel> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<GroupDataModel> in
             guard let JSONGroups = json["groups"] as? [[String: Any]],
                 let groups = Mapper<GroupDataModel>().mapArray(JSONObject: JSONGroups) else {
@@ -36,7 +36,7 @@ class GroupDatasource: GroupDatasourceProtocol {
         }
     }
     
-    func list() -> Observable<[GroupDataModel]> {
+    public func list() -> Observable<[GroupDataModel]> {
         return apiClient.execute(withURL: endpoint.url).flatMap { (json) -> Observable<[GroupDataModel]> in
             guard let JSONGroups = json["groups"] as? [[String: Any]],
                 let groups = Mapper<GroupDataModel>().mapArray(JSONObject: JSONGroups) else {

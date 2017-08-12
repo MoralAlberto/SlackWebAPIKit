@@ -1,7 +1,7 @@
 import Foundation
 import ObjectMapper
 
-class ChannelDataModel: Mappable {
+public class ChannelDataModel: Mappable {
     var created: Int?
     var creator: String?
     var id: String?
@@ -20,10 +20,10 @@ class ChannelDataModel: Mappable {
     var purpose: PurposeDataModel?
     var topic: TopicDataModel?
     
-    required init?(map: Map) { }
+    required public init?(map: Map) { }
     
     // Mappable
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         created     <- map["created"]
         creator     <- map["creator"]
         id          <- map["id"]

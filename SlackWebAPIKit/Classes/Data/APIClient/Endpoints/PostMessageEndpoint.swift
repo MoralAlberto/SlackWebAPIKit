@@ -8,7 +8,7 @@ public class PostMessageEndpoint: Endpoint {
     private let text: String
     private let channel: String
     private let asUser: Bool
-    var endpointType: EndpointType = .postMessage
+    public var endpointType: EndpointType = .postMessage
     
     init(text: String, channel: String, asUser: Bool = true) {
         self.text = text
@@ -16,7 +16,7 @@ public class PostMessageEndpoint: Endpoint {
         self.asUser = asUser
     }
     
-    var parameters: [String: String]? {
+    public var parameters: [String: String]? {
         get {
             return [Parameters.channel: "\(channel)",
                     Parameters.text: "\(text)",

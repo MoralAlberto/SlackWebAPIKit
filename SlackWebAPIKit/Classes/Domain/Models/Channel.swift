@@ -1,6 +1,6 @@
 import Foundation
 
-class Channel {
+public class Channel {
     var created: Int?
     var creator: String?
     var id: String?

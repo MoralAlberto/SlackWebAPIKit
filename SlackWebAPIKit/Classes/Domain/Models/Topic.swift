@@ -1,6 +1,6 @@
 import Foundation
 
-class Topic {
+public class Topic {
     var value: String?
     var creator: String?
     var lastSet: Int?

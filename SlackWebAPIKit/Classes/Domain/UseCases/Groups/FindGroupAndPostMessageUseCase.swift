@@ -1,21 +1,21 @@
 import Foundation
 import RxSwift
 
-protocol FindGroupAndPostMessageUseCaseProtocol: class {
+public protocol FindGroupAndPostMessageUseCaseProtocol: class {
     func execute(text: String, group: String) -> Observable<Bool>
 }
 
-class FindGroupAndPostMessageUseCase: FindGroupAndPostMessageUseCaseProtocol {
+public class FindGroupAndPostMessageUseCase: FindGroupAndPostMessageUseCaseProtocol {
     let findGroupUseCase: FindGroupUseCaseProtocol
     let postMessageUseCase: PostMessageUseCaseProtocol
     
-    init(findGroupUseCase: FindGroupUseCaseProtocol = FindGroupUseCase(),
+    public init(findGroupUseCase: FindGroupUseCaseProtocol = FindGroupUseCase(),
          postMessageUseCase: PostMessageUseCaseProtocol = PostMessageUseCase()) {
         self.findGroupUseCase = findGroupUseCase
         self.postMessageUseCase = postMessageUseCase
     }
     
-    func execute(text: String, group: String) -> Observable<Bool> {
+    public func execute(text: String, group: String) -> Observable<Bool> {
         return findGroupUseCase.execute(group: group).flatMap { [weak self] foundGroup -> Observable<Bool> in
             guard let strongSelf = self,
                 let groupId = foundGroup.id

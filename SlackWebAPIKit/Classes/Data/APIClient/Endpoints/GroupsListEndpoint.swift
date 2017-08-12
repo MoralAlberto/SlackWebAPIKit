@@ -1,4 +1,4 @@
 public class GroupsListEndpoint: Endpoint {
-    var endpointType: EndpointType = .groupsList
-    var parameters: [String: String]?
+    public var endpointType: EndpointType = .groupsList
+    public var parameters: [String: String]?
 }

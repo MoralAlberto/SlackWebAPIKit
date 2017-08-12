@@ -1,18 +1,18 @@
 import Foundation
 import RxSwift
 
-protocol FindGroupUseCaseProtocol: class {
+public protocol FindGroupUseCaseProtocol: class {
     func execute(group: String) -> Observable<Group>
 }
 
-class FindGroupUseCase: FindGroupUseCaseProtocol {
+public class FindGroupUseCase: FindGroupUseCaseProtocol {
     private let repository: GroupRepositoryProtocol
     
-    init(repository: GroupRepositoryProtocol = GroupRepository()) {
+    public init(repository: GroupRepositoryProtocol = GroupRepository()) {
         self.repository = repository
     }
     
-    func execute(group: String) -> Observable<Group> {
+    public func execute(group: String) -> Observable<Group> {
         return repository.find(group: group)
     }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-class Purpose {
+public class Purpose {
     var value: String?
     var creator: String?
     var lastSet: Int?
