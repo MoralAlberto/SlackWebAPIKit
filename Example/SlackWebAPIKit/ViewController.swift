@@ -1,24 +1,21 @@
-//
-//  ViewController.swift
-//  SlackWebAPIKit
-//
-//  Created by MoralAlberto on 08/12/2017.
-//  Copyright (c) 2017 MoralAlberto. All rights reserved.
-//
-
 import UIKit
+import SlackWebAPIKit
 
 class ViewController: UIViewController {
 
+    let postUserMessageUseCase = FindUserAndPostMessageUseCase()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        _ = postUserMessageUseCase.execute(text: "Test", user: "alberto")
+            .subscribe(onNext: { (isSent) in
+                print("onNext \(isSent)")
+            }, onError: { (error) in
+                print("onError \(error)")
+            }, onCompleted: {
+                print("onComplete")
+            })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
