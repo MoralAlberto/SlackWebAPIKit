@@ -1,0 +1,6 @@
+framework module Pods_SlackWebAPIKit_Example {
+  umbrella header "Pods-SlackWebAPIKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
