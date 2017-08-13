@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		394865E81F3F9EA10097521E /* ChannelsListUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865A31F3F9CFF0097521E /* ChannelsListUseCaseSpec.swift */; };
+		394865E91F3F9EA40097521E /* FindChannelAndSendMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865A41F3F9CFF0097521E /* FindChannelAndSendMessageSpec.swift */; };
+		394865EA1F3F9EA70097521E /* FindChannelUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865A51F3F9CFF0097521E /* FindChannelUseCaseSpec.swift */; };
+		394865EC1F3F9EAE0097521E /* FindGroupAndSendMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865A81F3F9CFF0097521E /* FindGroupAndSendMessageSpec.swift */; };
+		394865ED1F3F9EB10097521E /* FindGroupUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865A91F3F9CFF0097521E /* FindGroupUseCaseSpec.swift */; };
+		394865EE1F3F9EB30097521E /* GroupsListUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865AA1F3F9CFF0097521E /* GroupsListUseCaseSpec.swift */; };
+		394865EF1F3F9EB70097521E /* FindUserAndSendMessageSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865AC1F3F9CFF0097521E /* FindUserAndSendMessageSpec.swift */; };
+		394865F01F3F9EB90097521E /* FindUserUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865AD1F3F9CFF0097521E /* FindUserUseCaseSpec.swift */; };
+		394865F11F3F9EBC0097521E /* UsersListUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865AE1F3F9CFF0097521E /* UsersListUseCaseSpec.swift */; };
+		394865F21F3F9EC30097521E /* APIClientErrorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B21F3F9CFF0097521E /* APIClientErrorSpec.swift */; };
+		394865F31F3F9EC70097521E /* ChannelsListEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B41F3F9CFF0097521E /* ChannelsListEndpointSpec.swift */; };
+		394865F41F3F9ECA0097521E /* GroupsListEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B51F3F9CFF0097521E /* GroupsListEndpointSpec.swift */; };
+		394865F51F3F9ECD0097521E /* PostMessageEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B61F3F9CFF0097521E /* PostMessageEndpointSpec.swift */; };
+		394865F61F3F9ECF0097521E /* UsersListEndpointSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B71F3F9CFF0097521E /* UsersListEndpointSpec.swift */; };
+		394865F71F3F9ED30097521E /* AccessTokenAdapterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865B91F3F9CFF0097521E /* AccessTokenAdapterSpec.swift */; };
+		394865F81F3F9EDD0097521E /* apiclient.find.channel.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865BC1F3F9CFF0097521E /* apiclient.find.channel.succeed.json */; };
+		394865F91F3F9EDD0097521E /* apiclient.list.channels.empty.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865BD1F3F9CFF0097521E /* apiclient.list.channels.empty.succeed.json */; };
+		394865FA1F3F9EDD0097521E /* apiclient.list.channels.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865BE1F3F9CFF0097521E /* apiclient.list.channels.succeed.json */; };
+		394865FB1F3F9EDD0097521E /* apiclient.postmessage.channel.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865BF1F3F9CFF0097521E /* apiclient.postmessage.channel.succeed.json */; };
+		394865FC1F3F9EE70097521E /* apiclient.find.group.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C21F3F9CFF0097521E /* apiclient.find.group.succeed.json */; };
+		394865FD1F3F9EE70097521E /* apiclient.list.groups.empty.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C31F3F9CFF0097521E /* apiclient.list.groups.empty.succeed.json */; };
+		394865FE1F3F9EE70097521E /* apiclient.list.groups.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C41F3F9CFF0097521E /* apiclient.list.groups.succeed.json */; };
+		394865FF1F3F9EE70097521E /* apiclient.postmessage.group.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C51F3F9CFF0097521E /* apiclient.postmessage.group.succeed.json */; };
+		394866001F3F9EE70097521E /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394865C61F3F9CFF0097521E /* JSONHelper.swift */; };
+		394866011F3F9EEC0097521E /* apiclient.find.user.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C81F3F9CFF0097521E /* apiclient.find.user.succeed.json */; };
+		394866021F3F9EEC0097521E /* apiclient.list.users.empty.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865C91F3F9CFF0097521E /* apiclient.list.users.empty.succeed.json */; };
+		394866031F3F9EEC0097521E /* apiclient.list.users.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865CA1F3F9CFF0097521E /* apiclient.list.users.succeed.json */; };
+		394866041F3F9EEC0097521E /* apiclient.postmessage.user.succeed.json in Resources */ = {isa = PBXBuildFile; fileRef = 394865CB1F3F9CFF0097521E /* apiclient.postmessage.user.succeed.json */; };
+		39B7CCA41F403CF40023EFFA /* Pods_SlackWebAPIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FADCF21F3FA1C400E68944 /* Pods_SlackWebAPIKit_Tests.framework */; };
+		39B7CCA61F403CF90023EFFA /* Pods_SlackWebAPIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B7CCA51F403CF90023EFFA /* Pods_SlackWebAPIKit_Example.framework */; };
 		5E36171327A6BC1E810A925B /* Pods_SlackWebAPIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BDF0BE988C73E0C0374AC67 /* Pods_SlackWebAPIKit_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		8A100EE509B222D0B4EF59D6 /* Pods_SlackWebAPIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476E3244EE3CF8F0C2D0A2F1 /* Pods_SlackWebAPIKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +57,42 @@
 
 /* Begin PBXFileReference section */
 		07858C63DE16D104F0B67D6C /* Pods-SlackWebAPIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackWebAPIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackWebAPIKit_Example/Pods-SlackWebAPIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		127F93F62D2B0B35D4FB1FC2 /* SlackWebAPIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SlackWebAPIKit.podspec; path = ../SlackWebAPIKit.podspec; sourceTree = "<group>"; };
+		127F93F62D2B0B35D4FB1FC2 /* SlackWebAPIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SlackWebAPIKit.podspec; path = ../SlackWebAPIKit.podspec; sourceTree = "<group>"; };
+		394865A31F3F9CFF0097521E /* ChannelsListUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865A41F3F9CFF0097521E /* FindChannelAndSendMessageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindChannelAndSendMessageSpec.swift; sourceTree = "<group>"; };
+		394865A51F3F9CFF0097521E /* FindChannelUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindChannelUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865A81F3F9CFF0097521E /* FindGroupAndSendMessageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGroupAndSendMessageSpec.swift; sourceTree = "<group>"; };
+		394865A91F3F9CFF0097521E /* FindGroupUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindGroupUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865AA1F3F9CFF0097521E /* GroupsListUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsListUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865AC1F3F9CFF0097521E /* FindUserAndSendMessageSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUserAndSendMessageSpec.swift; sourceTree = "<group>"; };
+		394865AD1F3F9CFF0097521E /* FindUserUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindUserUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865AE1F3F9CFF0097521E /* UsersListUseCaseSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListUseCaseSpec.swift; sourceTree = "<group>"; };
+		394865B21F3F9CFF0097521E /* APIClientErrorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientErrorSpec.swift; sourceTree = "<group>"; };
+		394865B41F3F9CFF0097521E /* ChannelsListEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsListEndpointSpec.swift; sourceTree = "<group>"; };
+		394865B51F3F9CFF0097521E /* GroupsListEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsListEndpointSpec.swift; sourceTree = "<group>"; };
+		394865B61F3F9CFF0097521E /* PostMessageEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMessageEndpointSpec.swift; sourceTree = "<group>"; };
+		394865B71F3F9CFF0097521E /* UsersListEndpointSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersListEndpointSpec.swift; sourceTree = "<group>"; };
+		394865B91F3F9CFF0097521E /* AccessTokenAdapterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapterSpec.swift; sourceTree = "<group>"; };
+		394865BC1F3F9CFF0097521E /* apiclient.find.channel.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.find.channel.succeed.json; sourceTree = "<group>"; };
+		394865BD1F3F9CFF0097521E /* apiclient.list.channels.empty.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.channels.empty.succeed.json; sourceTree = "<group>"; };
+		394865BE1F3F9CFF0097521E /* apiclient.list.channels.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.channels.succeed.json; sourceTree = "<group>"; };
+		394865BF1F3F9CFF0097521E /* apiclient.postmessage.channel.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.postmessage.channel.succeed.json; sourceTree = "<group>"; };
+		394865C21F3F9CFF0097521E /* apiclient.find.group.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.find.group.succeed.json; sourceTree = "<group>"; };
+		394865C31F3F9CFF0097521E /* apiclient.list.groups.empty.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.groups.empty.succeed.json; sourceTree = "<group>"; };
+		394865C41F3F9CFF0097521E /* apiclient.list.groups.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.groups.succeed.json; sourceTree = "<group>"; };
+		394865C51F3F9CFF0097521E /* apiclient.postmessage.group.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.postmessage.group.succeed.json; sourceTree = "<group>"; };
+		394865C61F3F9CFF0097521E /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		394865C81F3F9CFF0097521E /* apiclient.find.user.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.find.user.succeed.json; sourceTree = "<group>"; };
+		394865C91F3F9CFF0097521E /* apiclient.list.users.empty.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.users.empty.succeed.json; sourceTree = "<group>"; };
+		394865CA1F3F9CFF0097521E /* apiclient.list.users.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.list.users.succeed.json; sourceTree = "<group>"; };
+		394865CB1F3F9CFF0097521E /* apiclient.postmessage.user.succeed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiclient.postmessage.user.succeed.json; sourceTree = "<group>"; };
+		39B7CCA51F403CF90023EFFA /* Pods_SlackWebAPIKit_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SlackWebAPIKit_Example.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/Pods_SlackWebAPIKit_Example.framework"; sourceTree = "<group>"; };
+		39FADCE81F3FA19500E68944 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		39FADCE91F3FA19500E68944 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/Nimble/Nimble.framework"; sourceTree = "<group>"; };
+		39FADCEA1F3FA19500E68944 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
+		39FADCEB1F3FA19500E68944 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/Quick/Quick.framework"; sourceTree = "<group>"; };
+		39FADCEC1F3FA19500E68944 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/RxSwift/RxSwift.framework"; sourceTree = "<group>"; };
+		39FADCF21F3FA1C400E68944 /* Pods_SlackWebAPIKit_Tests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SlackWebAPIKit_Tests.framework; path = "../../../Library/Developer/Xcode/DerivedData/SlackWebAPIKit-gkugvxmbxldauqcdtnjpjetriems/Build/Products/Debug-iphonesimulator/Pods_SlackWebAPIKit_Tests.framework"; sourceTree = "<group>"; };
 		42F5A0DF0FFFDE097E9E2A8E /* Pods-SlackWebAPIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackWebAPIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackWebAPIKit_Tests/Pods-SlackWebAPIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		476E3244EE3CF8F0C2D0A2F1 /* Pods_SlackWebAPIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackWebAPIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SlackWebAPIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackWebAPIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,11 +104,10 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SlackWebAPIKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlackWebAPIKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		64B5CF86C1DA85C05EA4E396 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		64B5CF86C1DA85C05EA4E396 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6BDF0BE988C73E0C0374AC67 /* Pods_SlackWebAPIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackWebAPIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		821F12AF70AF86B5EA0EED7D /* Pods-SlackWebAPIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackWebAPIKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackWebAPIKit_Tests/Pods-SlackWebAPIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9C14F5FD8C05A1C5C1C39E10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C14F5FD8C05A1C5C1C39E10 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FCC29C76A66FE2F172AA3D1D /* Pods-SlackWebAPIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackWebAPIKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackWebAPIKit_Example/Pods-SlackWebAPIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A100EE509B222D0B4EF59D6 /* Pods_SlackWebAPIKit_Tests.framework in Frameworks */,
+				39B7CCA61F403CF90023EFFA /* Pods_SlackWebAPIKit_Example.framework in Frameworks */,
+				39B7CCA41F403CF40023EFFA /* Pods_SlackWebAPIKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +135,163 @@
 		2BA2D0F70688CCBE72C9CC72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39B7CCA51F403CF90023EFFA /* Pods_SlackWebAPIKit_Example.framework */,
+				39FADCF21F3FA1C400E68944 /* Pods_SlackWebAPIKit_Tests.framework */,
+				39FADCE81F3FA19500E68944 /* Alamofire.framework */,
+				39FADCE91F3FA19500E68944 /* Nimble.framework */,
+				39FADCEA1F3FA19500E68944 /* ObjectMapper.framework */,
+				39FADCEB1F3FA19500E68944 /* Quick.framework */,
+				39FADCEC1F3FA19500E68944 /* RxSwift.framework */,
 				6BDF0BE988C73E0C0374AC67 /* Pods_SlackWebAPIKit_Example.framework */,
 				476E3244EE3CF8F0C2D0A2F1 /* Pods_SlackWebAPIKit_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		394865A11F3F9CFF0097521E /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				394865A21F3F9CFF0097521E /* Channels */,
+				394865A61F3F9CFF0097521E /* Chat */,
+				394865A71F3F9CFF0097521E /* Groups */,
+				394865AB1F3F9CFF0097521E /* Users */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		394865A21F3F9CFF0097521E /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				394865A31F3F9CFF0097521E /* ChannelsListUseCaseSpec.swift */,
+				394865A41F3F9CFF0097521E /* FindChannelAndSendMessageSpec.swift */,
+				394865A51F3F9CFF0097521E /* FindChannelUseCaseSpec.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		394865A61F3F9CFF0097521E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		394865A71F3F9CFF0097521E /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				394865A81F3F9CFF0097521E /* FindGroupAndSendMessageSpec.swift */,
+				394865A91F3F9CFF0097521E /* FindGroupUseCaseSpec.swift */,
+				394865AA1F3F9CFF0097521E /* GroupsListUseCaseSpec.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		394865AB1F3F9CFF0097521E /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				394865AC1F3F9CFF0097521E /* FindUserAndSendMessageSpec.swift */,
+				394865AD1F3F9CFF0097521E /* FindUserUseCaseSpec.swift */,
+				394865AE1F3F9CFF0097521E /* UsersListUseCaseSpec.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		394865AF1F3F9CFF0097521E /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				394865B01F3F9CFF0097521E /* Data */,
+				394865BA1F3F9CFF0097521E /* JSON */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		394865B01F3F9CFF0097521E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				394865B11F3F9CFF0097521E /* APIClients */,
+				394865B31F3F9CFF0097521E /* Endpoints */,
+				394865B81F3F9CFF0097521E /* Interceptor */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		394865B11F3F9CFF0097521E /* APIClients */ = {
+			isa = PBXGroup;
+			children = (
+				394865B21F3F9CFF0097521E /* APIClientErrorSpec.swift */,
+			);
+			path = APIClients;
+			sourceTree = "<group>";
+		};
+		394865B31F3F9CFF0097521E /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				394865B41F3F9CFF0097521E /* ChannelsListEndpointSpec.swift */,
+				394865B51F3F9CFF0097521E /* GroupsListEndpointSpec.swift */,
+				394865B61F3F9CFF0097521E /* PostMessageEndpointSpec.swift */,
+				394865B71F3F9CFF0097521E /* UsersListEndpointSpec.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		394865B81F3F9CFF0097521E /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				394865B91F3F9CFF0097521E /* AccessTokenAdapterSpec.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		394865BA1F3F9CFF0097521E /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				394865BB1F3F9CFF0097521E /* Channels */,
+				394865C01F3F9CFF0097521E /* Chat */,
+				394865C11F3F9CFF0097521E /* Groups */,
+				394865C61F3F9CFF0097521E /* JSONHelper.swift */,
+				394865C71F3F9CFF0097521E /* User */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		394865BB1F3F9CFF0097521E /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				394865BC1F3F9CFF0097521E /* apiclient.find.channel.succeed.json */,
+				394865BD1F3F9CFF0097521E /* apiclient.list.channels.empty.succeed.json */,
+				394865BE1F3F9CFF0097521E /* apiclient.list.channels.succeed.json */,
+				394865BF1F3F9CFF0097521E /* apiclient.postmessage.channel.succeed.json */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		394865C01F3F9CFF0097521E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		394865C11F3F9CFF0097521E /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				394865C21F3F9CFF0097521E /* apiclient.find.group.succeed.json */,
+				394865C31F3F9CFF0097521E /* apiclient.list.groups.empty.succeed.json */,
+				394865C41F3F9CFF0097521E /* apiclient.list.groups.succeed.json */,
+				394865C51F3F9CFF0097521E /* apiclient.postmessage.group.succeed.json */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		394865C71F3F9CFF0097521E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				394865C81F3F9CFF0097521E /* apiclient.find.user.succeed.json */,
+				394865C91F3F9CFF0097521E /* apiclient.list.users.empty.succeed.json */,
+				394865CA1F3F9CFF0097521E /* apiclient.list.users.succeed.json */,
+				394865CB1F3F9CFF0097521E /* apiclient.postmessage.user.succeed.json */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		5A509E7527592A0DD5A885E0 /* Pods */ = {
@@ -135,7 +351,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				394865A11F3F9CFF0097521E /* Integration */,
+				394865AF1F3F9CFF0097521E /* Unit */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -258,6 +475,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394865FD1F3F9EE70097521E /* apiclient.list.groups.empty.succeed.json in Resources */,
+				394865F91F3F9EDD0097521E /* apiclient.list.channels.empty.succeed.json in Resources */,
+				394866031F3F9EEC0097521E /* apiclient.list.users.succeed.json in Resources */,
+				394865FB1F3F9EDD0097521E /* apiclient.postmessage.channel.succeed.json in Resources */,
+				394865FE1F3F9EE70097521E /* apiclient.list.groups.succeed.json in Resources */,
+				394866011F3F9EEC0097521E /* apiclient.find.user.succeed.json in Resources */,
+				394865FC1F3F9EE70097521E /* apiclient.find.group.succeed.json in Resources */,
+				394865F81F3F9EDD0097521E /* apiclient.find.channel.succeed.json in Resources */,
+				394866041F3F9EEC0097521E /* apiclient.postmessage.user.succeed.json in Resources */,
+				394866021F3F9EEC0097521E /* apiclient.list.users.empty.succeed.json in Resources */,
+				394865FA1F3F9EDD0097521E /* apiclient.list.channels.succeed.json in Resources */,
+				394865FF1F3F9EE70097521E /* apiclient.postmessage.group.succeed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +499,7 @@
 			files = (
 			);
 			inputPaths = (
+				"",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -277,7 +507,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlackWebAPIKit_Tests/Pods-SlackWebAPIKit_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		84024CDC592E27E309351A28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -370,7 +599,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				394865F01F3F9EB90097521E /* FindUserUseCaseSpec.swift in Sources */,
+				394865F11F3F9EBC0097521E /* UsersListUseCaseSpec.swift in Sources */,
+				394865ED1F3F9EB10097521E /* FindGroupUseCaseSpec.swift in Sources */,
+				394865F41F3F9ECA0097521E /* GroupsListEndpointSpec.swift in Sources */,
+				394865F21F3F9EC30097521E /* APIClientErrorSpec.swift in Sources */,
+				394866001F3F9EE70097521E /* JSONHelper.swift in Sources */,
+				394865E81F3F9EA10097521E /* ChannelsListUseCaseSpec.swift in Sources */,
+				394865EE1F3F9EB30097521E /* GroupsListUseCaseSpec.swift in Sources */,
+				394865F51F3F9ECD0097521E /* PostMessageEndpointSpec.swift in Sources */,
+				394865EC1F3F9EAE0097521E /* FindGroupAndSendMessageSpec.swift in Sources */,
+				394865F31F3F9EC70097521E /* ChannelsListEndpointSpec.swift in Sources */,
+				394865F71F3F9ED30097521E /* AccessTokenAdapterSpec.swift in Sources */,
+				394865EA1F3F9EA70097521E /* FindChannelUseCaseSpec.swift in Sources */,
+				394865EF1F3F9EB70097521E /* FindUserAndSendMessageSpec.swift in Sources */,
+				394865F61F3F9ECF0097521E /* UsersListEndpointSpec.swift in Sources */,
+				394865E91F3F9EA40097521E /* FindChannelAndSendMessageSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +780,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackWebAPIKit_Example.app/SlackWebAPIKit_Example";
+				"TEST_HOST[sdk=*]" = "";
 			};
 			name = Debug;
 		};
@@ -552,6 +798,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlackWebAPIKit_Example.app/SlackWebAPIKit_Example";
 			};
 			name = Release;
 		};

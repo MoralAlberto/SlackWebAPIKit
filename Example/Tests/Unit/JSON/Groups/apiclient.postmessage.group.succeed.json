@@ -1,0 +1,12 @@
+{
+    "ok": true,
+    "channel": "G6LCS6LTU",
+    "ts": "1502531279.172315",
+    "message": {
+        "type": "message",
+        "user": "U6HGG4S94",
+        "text": "Hello",
+        "bot_id": "B6GPQPCVB",
+        "ts": "1502531279.172315"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "ok": true,
+    "groups": [
+               {
+               "id": "G6LCS6LTU",
+               "name": "secret",
+               "is_group": true,
+               "created": 1502301242,
+               "creator": "U6HGG4S94",
+               "is_archived": false,
+               "name_normalized": "secret",
+               "is_mpim": false,
+               "members": [
+                           "U6HGG4S94"
+                           ],
+               "topic": {
+               "value": "",
+               "creator": "",
+               "last_set": 0
+               },
+               "purpose": {
+               "value": "",
+               "creator": "",
+               "last_set": 0
+               }
+               }
+               ]
+}

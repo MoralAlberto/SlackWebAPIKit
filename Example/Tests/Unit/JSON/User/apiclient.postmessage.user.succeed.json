@@ -1,0 +1,12 @@
+{
+    "ok": true,
+    "channel": "C6G3ZN7MX",
+    "ts": "1502480620.898896",
+    "message": {
+        "type": "message",
+        "user": "U6HGG4S94",
+        "text": "hello",
+        "bot_id": "B6GPQPCVB",
+        "ts": "1502480620.898896"
+    }
+}
