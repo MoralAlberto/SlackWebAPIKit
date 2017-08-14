@@ -4,13 +4,14 @@ import SlackWebAPIKit
 
 class ViewController: UIViewController {
 
-    let postUserMessageUseCase = FindUserAndPostMessageUseCase()
+    var postUserMessageUseCase: FindUserAndPostMessageUseCase?
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        postUserMessageUseCase.execute(text: "Test", user: "alberto")
+        postUserMessageUseCase = FindUserAndPostMessageUseCase()
+        postUserMessageUseCase?.execute(text: "Test", user: "alberto")
             .subscribe(onNext: { (isSent) in
                 print("onNext \(isSent)")
             }, onError: { (error) in
@@ -20,4 +21,3 @@ class ViewController: UIViewController {
         }).addDisposableTo(disposeBag)
     }
 }
-

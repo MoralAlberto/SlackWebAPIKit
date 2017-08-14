@@ -1168,9 +1168,9 @@
 		6AEFC610BC870EC41C64A15F8E703E61 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				A05AF4FBFDE3B5DF71336AF5BEE16FB9 /* Repositories */,
 				DAB7DABCEBE079BD7B6837207D0E03A7 /* APIClient */,
 				9A4AC2B559F759BC9CAB5B26BE15A0CD /* DataModels */,
-				A05AF4FBFDE3B5DF71336AF5BEE16FB9 /* Repositories */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1269,8 +1269,8 @@
 		8DE329BBFD155A3441E8F5F76F59D215 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6AEFC610BC870EC41C64A15F8E703E61 /* Data */,
 				6E4CED8C24F04C01958C20E59A62158B /* Domain */,
+				6AEFC610BC870EC41C64A15F8E703E61 /* Data */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
