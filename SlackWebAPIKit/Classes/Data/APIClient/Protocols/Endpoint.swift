@@ -13,7 +13,7 @@ extension Endpoint {
     }
     
     public var endpoint: String {
-        return "\(API.baseUrl)\(path)"
+        return "\(API.sharedInstance.baseUrl)\(path)"
     }
     
     public var url: URL? {

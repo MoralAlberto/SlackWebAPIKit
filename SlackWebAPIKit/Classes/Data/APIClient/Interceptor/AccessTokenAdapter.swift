@@ -20,7 +20,7 @@ class AccessTokenAdapter: RequestAdapter, AccessTokenAdapterProtocol {
         var urlRequest = urlRequest
         
         guard let urlString = urlRequest.url?.absoluteString,
-            urlString.hasPrefix(API.baseUrl),
+            urlString.hasPrefix(API.sharedInstance.baseUrl),
             let url = urlRequest.url,
             var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
                 return urlRequest

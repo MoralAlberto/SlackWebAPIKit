@@ -11,7 +11,7 @@ public class APIClient: APIClientProtocol {
     fileprivate let sessionManager = SessionManager()
     
     public init() {
-        self.sessionManager.adapter = AccessTokenAdapter(accessToken: API.token)
+        self.sessionManager.adapter = AccessTokenAdapter(accessToken: API.sharedInstance.getToken()!)
     }
     
     public func execute(withURL url: URL?) -> Observable<[String: Any]> {
