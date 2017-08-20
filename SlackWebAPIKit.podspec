@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SlackWebAPIKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'Robust Slack Web API Kit in Swift.'
 
   s.description      = <<-DESC
