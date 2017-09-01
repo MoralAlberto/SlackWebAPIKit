@@ -87,6 +87,14 @@
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC07E3CC8E5FD526CF33F2567C2B144 /* TaskDelegate.swift */; };
 		375F1CB81E2036FBD5521EABE3D97C58 /* Pods-SlackWebAPIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4CD8B6116F97D5A7CA30FACB188922D /* Pods-SlackWebAPIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3915DBB4731CB17B255A7FE86E240B6E /* CwlCatchBadInstruction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0153CD9562E2F26F9B24E923219F00 /* CwlCatchBadInstruction.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
+		396613C11F59C7D600C07998 /* TeamDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613C01F59C7D600C07998 /* TeamDataModel.swift */; };
+		396613C31F59C80B00C07998 /* IconDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613C21F59C80B00C07998 /* IconDataModel.swift */; };
+		396613C51F59C8DE00C07998 /* TeamInfoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613C41F59C8DE00C07998 /* TeamInfoEndpoint.swift */; };
+		396613C91F59C95B00C07998 /* TeamDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613C81F59C95B00C07998 /* TeamDatasource.swift */; };
+		396613CD1F59C96E00C07998 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613CC1F59C96E00C07998 /* TeamRepository.swift */; };
+		396613CE1F59CA4000C07998 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613BE1F59C7B000C07998 /* Team.swift */; };
+		396613D01F59CAA500C07998 /* TeamDataModel+Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613CF1F59CAA500C07998 /* TeamDataModel+Team.swift */; };
+		396613D41F59CBC000C07998 /* TeamInfoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396613D31F59CBC000C07998 /* TeamInfoUseCase.swift */; };
 		3B1245192BBBCC9608581AF6A7AFF6FC /* GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0EFAFD72042E8A02A2FF3E66D85E07C /* GroupBy.swift */; };
 		3B471C0F6DAF90956B7053848786D676 /* FindChannelUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82DEE24C0906DC061B1466BE6359B29 /* FindChannelUseCase.swift */; };
 		3C90ED4F162B8DD5E96B19DCFC645598 /* ChannelDataModel+Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56CB5C6F864BBBFBB95EDEADB806A27 /* ChannelDataModel+Channel.swift */; };
@@ -521,6 +529,14 @@
 		3619092AC5FC756AB5B211AA65B12E2B /* GroupDataModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GroupDataModel.swift; sourceTree = "<group>"; };
 		364F3914B61987ED9CC668EFBC41732F /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Sources/Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
 		372FD7A8651E44EA4E5861558F6C3CD9 /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
+		396613BE1F59C7B000C07998 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		396613C01F59C7D600C07998 /* TeamDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDataModel.swift; sourceTree = "<group>"; };
+		396613C21F59C80B00C07998 /* IconDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconDataModel.swift; sourceTree = "<group>"; };
+		396613C41F59C8DE00C07998 /* TeamInfoEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoEndpoint.swift; sourceTree = "<group>"; };
+		396613C81F59C95B00C07998 /* TeamDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDatasource.swift; sourceTree = "<group>"; };
+		396613CC1F59C96E00C07998 /* TeamRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
+		396613CF1F59CAA500C07998 /* TeamDataModel+Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamDataModel+Team.swift"; sourceTree = "<group>"; };
+		396613D31F59CBC000C07998 /* TeamInfoUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamInfoUseCase.swift; sourceTree = "<group>"; };
 		3A99FF78F6451C59BA5ECBAD1F5835CB /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
 		3B2971196BE72AAE2332AF635E3D5F4C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3D61704B8E6D2AA5FC102F0FEAFF028A /* ObserverType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObserverType.swift; path = RxSwift/ObserverType.swift; sourceTree = "<group>"; };
@@ -1097,6 +1113,31 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
+		396613C61F59C94400C07998 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				396613CC1F59C96E00C07998 /* TeamRepository.swift */,
+				396613C71F59C95300C07998 /* Datasource */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
+		396613C71F59C95300C07998 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				396613C81F59C95B00C07998 /* TeamDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		396613D21F59CBB100C07998 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				396613D31F59CBC000C07998 /* TeamInfoUseCase.swift */,
+			);
+			path = Team;
+			sourceTree = "<group>";
+		};
 		46D64F8052105C6A8D8C49C54E95D0DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1183,6 +1224,7 @@
 				23FBFBE99A9D8FF2CED83EDEA12A87E2 /* Purpose.swift */,
 				BD3B2C8F2CECD86442F769176FAE55AA /* Topic.swift */,
 				46D1EB5B67CE746673DB1BE29539CC69 /* User.swift */,
+				396613BE1F59C7B000C07998 /* Team.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1283,6 +1325,7 @@
 				165598E8889028ED3289996F822B9A95 /* PurposeDataModel+Purpose.swift */,
 				A7CB864ACB348101477510B857C39CEB /* TopicDataModel+Topic.swift */,
 				024C0F04866E0C75499292BF9330C699 /* UserDataModel+User.swift */,
+				396613CF1F59CAA500C07998 /* TeamDataModel+Team.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -1306,6 +1349,8 @@
 			children = (
 				0C6C0D77B7C671BD46A68C441DEA1F6C /* ChannelDataModel.swift */,
 				3619092AC5FC756AB5B211AA65B12E2B /* GroupDataModel.swift */,
+				396613C01F59C7D600C07998 /* TeamDataModel.swift */,
+				396613C21F59C80B00C07998 /* IconDataModel.swift */,
 				6A6424214A080937B5F2038DFE92ED90 /* PurposeDataModel.swift */,
 				D019E8B24B6A7E7FD1DEE974CD2BAD7A /* TopicDataModel.swift */,
 				124A5D22A6F590097DDEDEEB2CF5FE84 /* UserDataModel.swift */,
@@ -1338,6 +1383,7 @@
 				9BEBF8D70DE3794B1F051B1335DAC823 /* Chat */,
 				E625AB29FBC3519C610BC29F292F291B /* Groups */,
 				C89E554148A5F0B9C0C8DE4D55F2BBC5 /* Users */,
+				396613C61F59C94400C07998 /* Team */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -1425,6 +1471,7 @@
 			isa = PBXGroup;
 			children = (
 				77C76678EB11537BEEB3C128D9833B41 /* ChannelsListEndpoint.swift */,
+				396613C41F59C8DE00C07998 /* TeamInfoEndpoint.swift */,
 				BCCAF2B573A005F694760AE060B947D2 /* GroupsListEndpoint.swift */,
 				CA5AF729FFF256175D9BB1A622F72FEF /* PostMessageEndpoint.swift */,
 				8F59DC38A941376F639987277CE6AFB8 /* UsersListEndpoint.swift */,
@@ -1596,6 +1643,7 @@
 		D77EA219BD71120F804D5F780A7D9707 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				396613D21F59CBB100C07998 /* Team */,
 				FB75D623FB7B83E34CB3F64801AE1872 /* Channels */,
 				68DD3631849902921889EDEC1E6F045C /* Chat */,
 				A242067CB5659201D77A8F56FFB44D85 /* Groups */,
@@ -2036,10 +2084,12 @@
 				5E30BF00C97DA711F5FFFDA30594985A /* ChannelsListEndpoint.swift in Sources */,
 				8061C41BC0A276373C2DDDE675FB01ED /* ChannelsListUseCase.swift in Sources */,
 				016F2D58005BD1A28A43223F700727ED /* ChatDatasource.swift in Sources */,
+				396613C31F59C80B00C07998 /* IconDataModel.swift in Sources */,
 				CD80DB220CA5D8F9DFB2B2295C6BCC87 /* ChatRepository.swift in Sources */,
 				6AB5D2B83206842BCAAF6779DD0E3DA1 /* Endpoint.swift in Sources */,
 				137C3260227FCC6F1DDD7735F33580E3 /* EndpointType.swift in Sources */,
 				BF35F4DEC88D15AB7589202B13F1B995 /* FindChannelAndPostMessageUseCase.swift in Sources */,
+				396613D01F59CAA500C07998 /* TeamDataModel+Team.swift in Sources */,
 				3B471C0F6DAF90956B7053848786D676 /* FindChannelUseCase.swift in Sources */,
 				7D1441653F12CD3086011A8DC99B2B2F /* FindGroupAndPostMessageUseCase.swift in Sources */,
 				4FC334249EE5D635D63C1443A5DF68B0 /* FindGroupUseCase.swift in Sources */,
@@ -2056,15 +2106,21 @@
 				70B24D7DAA83D26D6488B3E56492C162 /* Purpose.swift in Sources */,
 				46B3A47DD9F3B7F225F458AA0AFFC43B /* PurposeDataModel+Purpose.swift in Sources */,
 				DDC9B6C7D9AA3BA2577B89FA0316D4D4 /* PurposeDataModel.swift in Sources */,
+				396613C91F59C95B00C07998 /* TeamDatasource.swift in Sources */,
 				0F57EB74B17F84F61CE290DA39998AE3 /* SendMessageUseCase.swift in Sources */,
 				95E970DF2C05B55C0D54FC78674F0982 /* SlackWebAPIKit-dummy.m in Sources */,
+				396613C11F59C7D600C07998 /* TeamDataModel.swift in Sources */,
 				9F1D054A75A61913D5E504C9646813E2 /* Topic.swift in Sources */,
+				396613CE1F59CA4000C07998 /* Team.swift in Sources */,
 				41207A260E5A6DD1122E637389BA492B /* TopicDataModel+Topic.swift in Sources */,
 				0692BF965561EDB14C9466C03D7797DA /* TopicDataModel.swift in Sources */,
+				396613CD1F59C96E00C07998 /* TeamRepository.swift in Sources */,
 				FE3D1DCFBC55A534506E1AB5C0EC94C4 /* User.swift in Sources */,
+				396613D41F59CBC000C07998 /* TeamInfoUseCase.swift in Sources */,
 				EB66620ABA9E2D4004D419E576992ECC /* UserDataModel+User.swift in Sources */,
 				29D210D6CB5356E68A67DF41B2731939 /* UserDataModel.swift in Sources */,
 				92E4E499B1A17C6CCE815EBC64E7CD9A /* UserDatasource.swift in Sources */,
+				396613C51F59C8DE00C07998 /* TeamInfoEndpoint.swift in Sources */,
 				C93695AEA9D0E47B801E6565B58080F9 /* UserRepository.swift in Sources */,
 				516F87C546FC8DAA3B989D9AB11DFD01 /* UsersListEndpoint.swift in Sources */,
 				98BB59E5101A6C2EB9A7D7AD849FA607 /* UsersListUseCase.swift in Sources */,
