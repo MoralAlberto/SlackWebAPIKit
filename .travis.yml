@@ -1,4 +1,7 @@
 language: objective-c
 osx_image: xcode9
+before_install:
+- gem install cocoapods
+- pod install --repo-update --project-directory=Example
 script:
     - xcodebuild clean test -workspace Example/SlackWebAPIKit.xcworkspace -scheme SlackWebAPIKit-Example -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
