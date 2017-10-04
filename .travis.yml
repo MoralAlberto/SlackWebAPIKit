@@ -1,14 +1,4 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
-osx_image: xcode8.3
-language: swift
-# cache: cocoapods
-# podfile: Example/Podfile
-before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install --repo-update --project-directory=Example
+language: objective-c
+osx_image: xcode9
 script:
-- set -o pipefail && xcodebuild test -workspace Example/SlackWebAPIKit.xcworkspace -scheme SlackWebAPIKit-Example -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.0' | xcpretty
-- pod lib lint
+    - xcodebuild clean test -workspace Example/SlackWebAPIKit.xcworkspace -scheme SlackWebAPIKit-Example -destination "platform=iOS Simulator,name=iPhone 7,OS=10.3" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
