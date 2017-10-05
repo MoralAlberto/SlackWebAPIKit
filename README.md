@@ -27,16 +27,18 @@ pod "SlackWebAPIKit"
 
 ## Examples
 
+The following examples are used in [Slackfari](https://github.com/MoralAlberto/Slackfari)
+
 Get users
 
 ```swift
 getUsers()
-.observeOn(MainScheduler.instance)
-.subscribe(onNext: { [weak self] users in
-guard let strongSelf = self else { return }
-strongSelf.buildUsersViewModel(users: users)
-}, onError: { error in
-print("Error \(error)")
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { [weak self] users in
+        guard let strongSelf = self else { return }
+        strongSelf.buildUsersViewModel(users: users)
+    }, onError: { error in
+        print("Error \(error)")
 }).disposed(by: disposeBag)
 ```
 
@@ -44,12 +46,12 @@ Get Channels
 
 ```swift
 getChannels()
-.observeOn(MainScheduler.instance)
-.subscribe(onNext: { [weak self] channels in
-guard let strongSelf = self else { return }
-strongSelf.buildChannelsViewModel(channels: channels)
-}, onError: { error in
-print("Error \(error)")
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { [weak self] channels in
+        guard let strongSelf = self else { return }
+        strongSelf.buildChannelsViewModel(channels: channels)
+    }, onError: { error in
+        print("Error \(error)")
 }).disposed(by: disposeBag)
 ```
 
@@ -57,12 +59,12 @@ Get Groups (Private Channels)
 
 ```swift
 getGroups()
-.observeOn(MainScheduler.instance)
-.subscribe(onNext: { [weak self] groups in
-guard let strongSelf = self else { return }
-strongSelf.buildGroupsViewModel(groups: groups)
-}, onError: { error in
-print("Error \( error)")
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { [weak self] groups in
+        guard let strongSelf = self else { return }
+        strongSelf.buildGroupsViewModel(groups: groups)
+    }, onError: { error in
+        print("Error \( error)")
 }).disposed(by: disposeBag)
 ```
 
@@ -70,16 +72,16 @@ Get Team Info
 
 ```swift
 getTeamInfo()
-.observeOn(MainScheduler.instance)
-.subscribe(onNext: { [weak self] team in
-guard let strongSelf = self else { return }
-guard let name = team.name else { return }
-strongSelf.delegate?.update(team: name)
-}, onError: { [weak self] error in
-guard let strongSelf = self else { return }
-strongSelf.delegate?.update(team: "Error")
-}, onCompleted: {
-print("Completed")
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { [weak self] team in
+        guard let strongSelf = self else { return }
+        guard let name = team.name else { return }
+        strongSelf.delegate?.update(team: name)
+    }, onError: { [weak self] error in
+        guard let strongSelf = self else { return }
+        strongSelf.delegate?.update(team: "Error")
+    }, onCompleted: {
+        print("Completed")
 }).disposed(by: disposeBag)
 ```
 
@@ -87,13 +89,13 @@ Send Message
 
 ```swift
 send(message: message, channel: channel, type: type)
-.observeOn(MainScheduler.instance)
-.subscribe(onNext: { [weak self] isSent in
-guard let strongSelf = self else { return }
-strongSelf.delegate?.update(notification: "Last message sent to: \(channel)")
-}, onError: { [weak self] error in
-guard let strongSelf = self else { return }
-strongSelf.delegate?.update(notification: "Error trying to send the message")
+    .observeOn(MainScheduler.instance)
+    .subscribe(onNext: { [weak self] isSent in
+        guard let strongSelf = self else { return }
+        strongSelf.delegate?.update(notification: "Last message sent to: \(channel)")
+    }, onError: { [weak self] error in
+        guard let strongSelf = self else { return }
+        strongSelf.delegate?.update(notification: "Error trying to send the message")
 }).disposed(by: disposeBag)
 ```
 
