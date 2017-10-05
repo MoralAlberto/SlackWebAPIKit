@@ -1,5 +1,3 @@
-# SlackWebAPIKit
-
 <p align="center">
 <a href="https://cocoapods.org/pods/SlackWebAPIKit">
 <img src="https://img.shields.io/cocoapods/v/SlackWebAPIKit.svg" alt="CocoaPods" />
@@ -9,6 +7,7 @@
 </a>
 </p>
 
+# SlackWebAPIKit
 
 ## Example
 
